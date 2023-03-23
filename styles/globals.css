@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --color-bg-primary: #0a0a0a;
   --color-bg-secondary: #141414;
@@ -106,10 +110,9 @@ code {
 
 /* Buttons */
 
-.btn,
-button {
+.btn {
   --bg: #000;
-  --hover-bg: #ff90e8;
+  --hover-bg: #dcd7c9;
   --hover-text: #000;
   color: #fff;
   border: 1px solid var(--bg);
@@ -131,7 +134,7 @@ button {
 }
 
 .button {
-  background: #fbca1f;
+  background: #fff;
   color: #000;
   font-family: inherit;
   padding: 0.6em 1.3em;
@@ -216,9 +219,10 @@ button.btn-logOut {
 .card {
   padding: 2rem;
   margin: 1rem 0;
+  overflow-wrap: anywhere;
+  word-break: break-all;
   background-color: var(--color-bg-secondary);
 }
-
 .card footer {
   display: flex;
 }
@@ -243,6 +247,10 @@ button.btn-logOut {
   background: var(--color-blue);
 }
 
+.content {
+  width: 100%;
+  overflow-x: scroll;
+}
 /* Loader */
 
 .spinner {
