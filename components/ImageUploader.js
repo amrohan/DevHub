@@ -48,7 +48,7 @@ export default function ImageUploader() {
 
       {!uploading && (
         <>
-          <label className="btn">
+          <label className="button cursor-pointer ">
             📸 Upload Img
             <input
               type="file"
@@ -60,7 +60,7 @@ export default function ImageUploader() {
       )}
 
       {downloadURL && (
-        <code className="upload-snippet">{`![alt](${downloadURL})`}</code>
+        <code className="upload-snippet text-zinc-600">{`![alt](${downloadURL})`}</code>
       )}
     </div>
   );

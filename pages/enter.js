@@ -40,6 +40,7 @@ function SignInButton() {
 
   return (
     <div className="login-form">
+      <h1>Signup / Login here</h1>
       {/* Signin With google button */}
       <button className="btn-google" onClick={signInWithGoogle}>
         <img src={"/google.png"} /> Sign in with Google

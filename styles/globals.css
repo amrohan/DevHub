@@ -110,7 +110,8 @@ code {
 
 /* Buttons */
 
-.btn {
+.btn,
+button {
   --bg: #000;
   --hover-bg: #dcd7c9;
   --hover-text: #000;

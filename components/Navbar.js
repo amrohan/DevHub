@@ -9,7 +9,6 @@ import Username from "pages/api/[username]";
 export default function Navbar() {
   const { user, username } = useContext(UserContext);
   const router = useRouter();
-
   const signOut = () => {
     auth.signOut();
     router.reload();
@@ -33,7 +32,10 @@ export default function Navbar() {
         {username && (
           <>
             <li>
-              <button onClick={handleOnClick}>
+              <button
+                onClick={handleOnClick}
+                className="bg-transparent border-transparent"
+              >
                 <img src={user?.photoURL || "/hacker.png"} />
               </button>
             </li>
@@ -96,7 +98,7 @@ export default function Navbar() {
                   {/* Cross to close popup */}
                   <button
                     onClick={handleOnClick}
-                    className="absolute top-2 right-6 "
+                    className="absolute top-2 right-6 bg-transparent border-transparent "
                   >
                     <svg
                       className="h-6 text-[#105b6b]"
